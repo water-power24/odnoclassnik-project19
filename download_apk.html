@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Скачать приложение Одноклассник</title>
+
+    <!-- Исправленный путь к CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Docker+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="blue">
+    <!-- header -->
+    <header class="header">
+      <div class="buttons_white">
+        <div><a href="index.html">главная</a></div>
+        <div><a href="download_apk.html">скачать приложение</a></div>
+        <div><a href="documents.html">документы для кураторов</a></div>
+      </div>
+    </header>
+
+    <!-- block_download -->
+    <div class="block_download">
+      <p class="black-title">СКАЧАЙ ПРИЛОЖЕНИЕ И НАЧИНАЙ ОБЩЕНИЕ С ДРУЗЬЯМИ!</p>
+
+      <p class="advantage-description-white">
+        Установи наше приложение и начни общаться, учиться и вдохновляться
+        вместе с других школьников!
+      </p>
+
+      <div class="download-buttons">
+        <!-- Кнопка Android - файл В ТОЙ ЖЕ ПАПКЕ! -->
+        <a
+          href="./app-release.apk"
+          class="download-btn download-btn-active"
+          download="Одноклассник.apk"
+        >
+          <img src="./android.png" alt="Android" class="download-icon" />
+          <span class="download-text">Скачать для Android</span>
+          <span class="download-info">APK • 1 клик • 25 МБ</span>
+        </a>
+
+        <!-- Кнопка Desktop -->
+        <div
+          class="download-btn download-btn-disabled"
+          onclick="showComingSoon('Desktop')"
+        >
+          <img src="./laptop.png" alt="Desktop" class="download-icon" />
+          <span class="download-text">Скачать для Desktop</span>
+          <span class="download-info">Скоро</span>
+        </div>
+
+        <!-- Кнопка iOS -->
+        <div
+          class="download-btn download-btn-disabled"
+          onclick="showComingSoon('iOS')"
+        >
+          <img src="./apple.png" alt="iOS" class="download-icon" />
+          <span class="download-text">Скачать для iOS</span>
+          <span class="download-info">Скоро</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section footer-about">
+          <h3 class="footer-title">О НАС</h3>
+          <p>
+            Мы — школьная команда, создающая удобное и яркое приложение для
+            общения, учебы и вдохновения.
+          </p>
+          <p>Всё — от школьников для школьников.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-title">НАВИГАЦИЯ</h3>
+          <ul class="footer-links">
+            <a href="index.html">о проекте</a>
+            <a href="documents.html">документы для кураторов</a>
+            <a href="download_apk.html">скачать приложение</a>
+          </ul>
+        </div>
+
+        <div class="footer-section footer-contacts">
+          <h3 class="footer-title">КОНТАКТЫ</h3>
+          <p>
+            email:
+            <a href="mailto:fedor.admidin2010@mail.ru">
+              fedor.admidin2010@mail.ru
+            </a>
+          </p>
+          <p>
+            telegram:
+            <a href="https://t.me/lodochka566" target="_blank">
+              @lodochka566
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-logo">ОДНОКЛАССНИК</div>
+
+      <div class="footer-bottom">© 2025 Одноклассник — сделано школьниками</div>
+    </footer>
+
+    <!-- Исправленный путь к JS -->
+    <script src="./index.js"></script>
+
+    <!-- Добавляем функцию showComingSoon -->
+    <script>
+      function showComingSoon(platform) {
+        alert(`Версия для ${platform} будет доступна в следующем обновлении!`);
+      }
+
+      // Проверяем доступность файла при загрузке страницы
+      document.addEventListener("DOMContentLoaded", function () {
+        const apkLink = document.querySelector(".download-btn-active");
+        if (apkLink) {
+          // Можно добавить проверку существования файла
+          fetch(apkLink.href)
+            .then((response) => {
+              if (!response.ok) {
+                console.error("APK файл не найден по пути:", apkLink.href);
+              } else {
+                console.log("APK файл доступен для скачивания");
+              }
+            })
+            .catch((error) => {
+              console.error("Ошибка при проверке файла:", error);
+            });
+        }
+      });
+    </script>
+  </body>
+</html>

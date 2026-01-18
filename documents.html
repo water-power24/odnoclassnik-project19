@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Docker+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body class="blue">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="buttons_white">
+        <div><a href="index.html">о проекте</a></div>
+        <div><a href="download_apk.html">скачать приложение</a></div>
+        <div><a href="documents.html">документы для кураторов</a></div>
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- DOCUMENTS -->
+    <div class="block_documents">
+      <p class="black-title">ДОКУМЕНТЫ ДЛЯ УЧАСТНИКОВ</p>
+      <p class="advantage-description-white">
+        Скачайте необходимые документы для учителей и учеников
+      </p>
+
+      <div class="documents-buttons">
+        <a href="./for_teacher.docx" class="document-btn" download>
+          <i class="fas fa-chalkboard-teacher document-icon-fa"></i>
+          <span class="document-text">Документы для учителей</span>
+          <span class="document-subtext">Инструкции и руководства</span>
+          <span class="document-size">DOCX, 15 КБ</span>
+        </a>
+
+        <a href="./for_student.docx" class="document-btn" download>
+          <i class="fas fa-user-graduate document-icon-fa"></i>
+          <span class="document-text">Документы для учеников</span>
+          <span class="document-subtext">Правила и рекомендации</span>
+          <span class="document-size">DOCX, 16 КБ</span>
+        </a>
+      </div>
+    </div>
+    <!-- DOCUMENTS END -->
+
+    <!-- STEPS -->
+    <section class="steps-section">
+      <h2 class="section-title">Пошаговая регистрация</h2>
+
+      <div class="steps-wrapper">
+        <div class="step">
+          <div class="circle"><div class="step-number">01</div></div>
+          <p class="step-text">
+            Кураторы печатают анкеты и раздают ученикам и учителям.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="circle"><div class="step-number">02</div></div>
+          <p class="step-text">
+            Куратор создаёт аккаунты и получает уникальные коды.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="circle"><div class="step-number">03</div></div>
+          <p class="step-text">
+            Пользователи входят в аккаунты и начинают общение.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- STEPS END -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="footer-title">О НАС</h3>
+          <p>Школьная платформа для общения и учебы.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-title">НАВИГАЦИЯ</h3>
+          <ul class="footer-links">
+            <li><a href="about.html">О проекте</a></li>
+            <li><a href="documents.html">Документы</a></li>
+            <li><a href="download.html">Скачать приложение</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-title">КОНТАКТЫ</h3>
+          <p>
+            email:
+            <a href="mailto:fedor.admidin2010@mail.ru">
+              fedor.admidin2010@mail.ru
+            </a>
+          </p>
+          <p>
+            telegram:
+            <a href="https://t.me/lodochka566" target="_blank">
+              @lodochka566
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-logo">ОДНОКЛАССНИК</div>
+      <div class="footer-bottom">© 2025 Одноклассник</div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- MODALS -->
+    <div id="logoutModal" class="modal">
+      <div class="modal-content">
+        <h3>Выход из аккаунта</h3>
+        <p>Вы уверены, что хотите выйти?</p>
+        <div class="modal-buttons">
+          <button class="modal-btn confirm-btn">Да, выйти</button>
+          <button class="modal-btn cancel-btn" onclick="closeLogoutModal()">
+            Отмена
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="profilePanel" class="profile-panel">
+      <div class="profile-header">
+        <h3>Профиль</h3>
+        <button class="close-btn" onclick="closeProfilePanel()">×</button>
+      </div>
+
+      <div class="profile-info">
+        <p><strong>Имя:</strong> Фёдор</p>
+        <p><strong>Email:</strong> fedor.admidin2010@mail.ru</p>
+        <p><strong>Регистрация:</strong> 01.01.2025</p>
+      </div>
+    </div>
+
+    <!-- JS -->
+
+    <script src="./index.js"></script>
+  </body>
+</html>

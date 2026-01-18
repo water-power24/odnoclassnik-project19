@@ -1,0 +1,1413 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+img {
+  pointer-events: none;
+}
+
+::selection {
+  background: #0647ff;
+  color: white;
+}
+
+::-moz-selection {
+  background: #0647ff;
+  color: white;
+}
+
+.img_all-widht {
+  width: 100%;
+  display: block;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 28px 152.5px 0;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.buttons_white {
+  display: flex;
+}
+
+.button-registration-login {
+  display: flex;
+  align-items: center;
+}
+
+.buttons_white div {
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-right: 20px;
+}
+
+.buttons_white a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.button-registration-login a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#login-button {
+  border-bottom: 2px solid #fff;
+  margin-right: 50px;
+  padding: 10px 0;
+}
+
+#registration-button {
+  background-color: #0647ff;
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+#logout-button {
+  background-color: #0647ff;
+  border-radius: 50px;
+  padding: 5px 20px;
+  border: none;
+}
+
+#logout-button p {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.text-name-h1 {
+  font-family: "Docker One", cursive;
+  font-size: 60px;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.div-text {
+  text-align: center;
+}
+
+.text-normal {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: regular;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.button-blue {
+  background-color: #0647ff;
+  border-radius: 50px;
+  padding: 15px 30px;
+  text-align: center;
+  margin-top: 52px;
+}
+
+.button-blue a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 45px;
+  font-weight: regular;
+  white-space: nowrap;
+}
+
+.title-text {
+  font-family: "Docker One", cursive;
+  font-size: 60px;
+  font-weight: normal;
+  color: #0647ff;
+  margin-top: 164px;
+  margin-bottom: 80px;
+}
+
+.text-normal_black {
+  text-align: center;
+}
+
+.text-normal_black p {
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: regular;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.small-title {
+  margin: 0px;
+  margin-bottom: 6px;
+  font-family: "Docker One", cursive;
+  font-size: 50px;
+  font-weight: normal;
+  color: #0647ff;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.transparent-button {
+  background-color: transparent;
+  border: 4px solid #0647ff;
+  width: 277px;
+  text-align: center;
+  border-radius: 50px;
+  margin-top: 84px;
+  margin-left: 1440px;
+}
+
+.transparent-button a {
+  color: #0647ff;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: regular;
+}
+
+.decoration_1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.line {
+  margin-top: 40px;
+  background-color: #0647ff;
+  width: 425px;
+  height: 2px;
+}
+
+.images-book {
+  width: 80px;
+  margin-left: 120px;
+  margin-right: 120px;
+  filter: brightness(0) saturate(100%) invert(26%) sepia(89%) saturate(7482%)
+    hue-rotate(225deg) brightness(95%) contrast(101%);
+}
+
+.block-3 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.image-teacher {
+  width: 722px;
+  height: 722px;
+  border-radius: 32px;
+  object-fit: cover;
+}
+
+.style-block3 {
+  gap: 102px;
+}
+
+.line-2 {
+  margin: 20px 0;
+  background-color: #0647ff;
+  width: 100%;
+  max-width: 722px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.circle {
+  width: 98px;
+  height: 98px;
+  border: 3px solid #0647ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.number {
+  font-family: "Docker One", cursive;
+  font-size: 55px;
+  color: #0647ff;
+  margin: 0;
+}
+
+.mini-block,
+.mini-block_withoutmargin {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: transparent;
+  min-height: 100px;
+  position: relative;
+  transition: none;
+}
+
+.small-title-2 {
+  margin: 0 0 10px 0;
+  font-family: "Docker One", cursive;
+  font-size: 50px;
+  color: #0647ff;
+  font-weight: normal;
+}
+
+.advantage-description {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  line-height: 1.3;
+  color: #000;
+  margin-top: 0;
+}
+
+.margin {
+  margin-left: 80px;
+}
+
+.img-macbook img {
+  width: 1000px;
+  height: 595px;
+}
+
+.text-normal_black-left {
+  justify-content: left;
+  margin-left: 48px;
+}
+
+.text-normal_black-left p {
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: regular;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.image_mascot img {
+  height: 610px;
+  object-fit: cover;
+}
+
+.image-circle {
+  margin-top: 216px;
+}
+
+.image-circle img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  margin-top: 48px;
+  background-color: #032a6d;
+  color: white;
+  padding: 60px 80px 30px;
+  margin-top: 100px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-title {
+  margin-top: 24px;
+  font-family: "Docker One";
+  font-size: 60px;
+  font-weight: normal;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.footer-about p {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 15px;
+}
+
+.footer-links li {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-contacts p {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-contacts a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-contacts a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-width: 1504px;
+  border-top: 4px solid #0647ff;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.footer-logo {
+  font-family: "Docker One";
+  font-size: 60px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: #fff;
+  margin-left: 65%;
+  margin-bottom: 35px;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  color: #fff;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.auth-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+}
+
+.auth-container {
+  max-width: 450px;
+  width: 90%;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  position: relative;
+  z-index: 10;
+}
+
+.auth-title {
+  font-family: "Docker One", cursive;
+  font-size: 42px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+}
+
+.auth-button {
+  width: 100%;
+  background: #0647ff;
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 50px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 4px 15px #0647ff;
+}
+
+.auth-button:hover {
+  transform: translateY(-2px);
+}
+
+.auth-links {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.auth-links a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.auth-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.auth-divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 0 10px;
+}
+
+.errorlist {
+  color: #ff6b6b;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.auth-container {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.auth-page {
+  background: url('{% static "images/image-for-background.png" %}') no-repeat
+    center center fixed;
+  background-size: cover;
+}
+
+.back-button {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  padding: 12px 25px;
+  color: white;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  margin: 15% auto;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.modal-content h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  color: #0647ff;
+  margin-bottom: 15px;
+}
+
+.modal-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.logout-form {
+  display: inline;
+}
+
+.modal-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+}
+
+.confirm-btn {
+  background: #0647ff;
+  color: white;
+}
+
+.confirm-btn:hover {
+  background: #052fcc;
+  transform: translateY(-2px);
+}
+
+.cancel-btn {
+  background: rgba(108, 117, 125, 0.2);
+  color: #6c757d;
+  border: 1px solid rgba(108, 117, 125, 0.3);
+}
+
+.cancel-btn:hover {
+  background: rgba(108, 117, 125, 0.3);
+  transform: translateY(-2px);
+}
+
+.profile-panel {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 350px;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  box-shadow: -5px 0 25px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  z-index: 1001;
+  padding: 20px;
+  border-left: 2px solid #0647ff;
+}
+
+.profile-panel.active {
+  right: 0;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.profile-header h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  color: #0647ff;
+  margin: 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #0647ff;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.close-btn:hover {
+  background: rgba(6, 71, 255, 0.1);
+}
+
+.profile-info {
+  margin-bottom: 30px;
+}
+
+.profile-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.label {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.value {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.profile-actions {
+  margin-top: 40px;
+}
+
+.logout-btn {
+  width: 100%;
+  background: #0647ff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 15px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #052fcc;
+  transform: translateY(-2px);
+}
+
+.panelOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 999;
+}
+
+.panelOverlay.active {
+  display: block;
+}
+
+.block_download {
+  margin-top: 200px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.black-title {
+  font-family: "Docker One", cursive;
+  font-size: 50px;
+  font-weight: normal;
+  color: #fff;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.download-btn {
+  width: 277px;
+  height: 234px;
+  padding: 15px 30px;
+  background-color: #052fcc;
+  margin-top: 69px;
+  border-radius: 48px;
+  transition: all 0.3s ease;
+  border: 2px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.download-icon {
+  filter: brightness(0) invert(1);
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.download-text {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.download-btn:hover {
+  background-color: #0229b4;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.blue {
+  background-color: #3357b9;
+  padding-top: 20px;
+}
+
+.advantage-description-white {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  line-height: 1.3;
+  color: #fff;
+  margin-top: 0;
+  text-align: center;
+}
+
+.block_documents {
+  margin-top: 200px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.documents-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.document-btn {
+  width: 320px;
+  height: 280px;
+  padding: 25px;
+  background-color: #052fcc;
+  border-radius: 48px;
+  transition: all 0.3s ease;
+  border: 2px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.document-icon {
+  filter: brightness(0) invert(1);
+  width: 90px;
+  height: 90px;
+  margin-bottom: 25px;
+}
+
+.document-text {
+  font-family: "Inter", sans-serif;
+  font-size: 26px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.document-size {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+}
+
+.document-btn:hover {
+  background-color: #052cb9;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.document-icon-fa {
+  font-size: 70px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.document-subtext {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.fa-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.document-btn {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.section-title {
+  font-family: "Docker One", cursive;
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  margin-top: 164px;
+  margin-bottom: 80px;
+}
+
+.steps-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  padding: 20px 0;
+}
+
+.step-content {
+  background-color: transparent;
+  padding-left: 20px;
+  flex: 1;
+}
+
+.step-text {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  margin: 0 0 4px 0;
+  color: #fff;
+}
+
+.circle {
+  width: 98px;
+  height: 98px;
+  border: 3px solid #0647ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  flex-shrink: 0;
+  z-index: 2;
+  position: relative;
+}
+
+.step-number {
+  font-family: "Docker One", cursive;
+  font-size: 55px;
+  color: #0647ff;
+  margin: 0;
+}
+
+.step:nth-child(1) .connector {
+  width: 0;
+}
+
+.download-info {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  display: block;
+  margin-top: 5px;
+}
+@media (max-width: 768px) {
+  /* Header */
+  .header {
+    padding: 20px;
+  }
+
+  .buttons_white {
+    display: block;
+    text-align: center;
+  }
+
+  .buttons_white div {
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+  }
+
+  .buttons_white a {
+    text-decoration: none;
+    color: #000;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  /* Block 1 */
+  .image-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .text-name-h1 {
+    font-size: 40px;
+  }
+
+  .text-normal {
+    font-size: 25px;
+  }
+
+  .button-blue a {
+    font-size: 30px;
+    padding: 12px 20px;
+  }
+
+  /* Block 2 */
+  .block-2 {
+    padding: 20px;
+  }
+
+  .text-normal_black p {
+    font-size: 20px;
+  }
+
+  /* Block 3 */
+  .block-3 {
+    padding: 20px;
+  }
+
+  .image-teacher {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .style-block3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .footer-content {
+    display: block;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+
+  .footer-section h3 {
+    font-size: 25px;
+  }
+
+  .footer-section p,
+  .footer-section a {
+    font-size: 18px;
+  }
+
+  /* Дополнительные изменения для мобильных */
+  .block-4 {
+    padding: 20px;
+  }
+
+  .block-5 {
+    padding: 20px;
+  }
+
+  .download-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .document-btn {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .document-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .document-text {
+    font-size: 22px;
+  }
+}
+
+/* Доделать для малых экранов */
+@media (max-width: 480px) {
+  .text-name-h1 {
+    font-size: 30px;
+  }
+
+  .text-normal {
+    font-size: 18px;
+  }
+
+  .button-blue a {
+    font-size: 22px;
+    padding: 10px 15px;
+  }
+
+  .buttons_white a {
+    font-size: 18px;
+  }
+
+  .image-teacher {
+    max-width: 250px;
+  }
+
+  .line {
+    width: 100%;
+  }
+
+  .footer-section h3 {
+    font-size: 22px;
+  }
+
+  .footer-section p,
+  .footer-section a {
+    font-size: 16px;
+  }
+
+  .download-btn {
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .block-4,
+  .block-5 {
+    padding: 60px 20px;
+  }
+
+  .block-4 .flex,
+  .block-5 .flex {
+    gap: 3rem;
+  }
+
+  .block-4 .img-macbook img {
+    max-width: 500px;
+  }
+
+  .block-5 .image_mascot img {
+    max-height: 500px;
+  }
+
+  .image-circle {
+    padding: 3rem 20px;
+  }
+
+  .image-circle img {
+    max-width: 600px;
+  }
+}
+
+/* ============================================
+   🎯 АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ (до 768px)
+============================================ */
+@media (max-width: 768px) {
+  .block-4,
+  .block-5 {
+    padding: 40px 15px;
+  }
+
+  .block-4 .flex,
+  .block-5 .flex {
+    flex-direction: column;
+    text-align: center;
+    gap: 2.5rem;
+  }
+
+  .block-4 .text-normal_black-left,
+  .block-5 .text-normal_black-left {
+    text-align: center;
+    max-width: 100%;
+    order: 1;
+  }
+
+  .block-4 .img-macbook,
+  .block-5 .image_mascot {
+    order: 2;
+    max-width: 100%;
+  }
+
+  .block-4 .small-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+  }
+
+  .block-5 .text-normal_black-left strong::after {
+    right: -20px;
+    font-size: 1rem;
+  }
+
+  .image-circle {
+    padding: 2rem 15px;
+  }
+
+  .image-circle img {
+    max-width: 400px;
+  }
+
+  /* Убираем анимации на мобильных для производительности */
+  @media (prefers-reduced-motion: reduce) {
+    .block-4 .img-macbook img,
+    .block-5 .image_mascot img,
+    .image-circle img {
+      animation: none;
+    }
+
+    .block-5 .text-normal_black-left strong::after {
+      animation: none;
+    }
+  }
+}
+
+/* ============================================
+   🎯 АДАПТИВНОСТЬ ДЛЯ МАЛЕНЬКИХ МОБИЛЬНЫХ (до 480px)
+============================================ */
+@media (max-width: 480px) {
+  .block-4,
+  .block-5 {
+    padding: 30px 10px;
+  }
+
+  .block-4 .title-text,
+  .block-5 .title-text {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .block-4 .title-text::after,
+  .block-5 .title-text::after {
+    width: 60px;
+    height: 2px;
+  }
+
+  .block-4 .small-title {
+    font-size: 1.5rem;
+  }
+
+  .block-4 .text-normal_black-left p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .block-5 .text-normal_black-left p {
+    font-size: 1.125rem;
+  }
+
+  .block-4 .img-macbook img {
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(6, 71, 255, 0.1);
+  }
+
+  .block-5 .image_mascot img {
+    max-height: 350px;
+    border-radius: 15px;
+  }
+
+  .block-5 .text-normal_black-left strong::after {
+    display: none; /* Скрываем на очень маленьких экранах */
+  }
+
+  .image-circle {
+    padding: 1.5rem 10px;
+  }
+
+  .image-circle img {
+    max-width: 300px;
+  }
+}
+
+/* ============================================
+   🎯 АДАПТИВНОСТЬ ДЛЯ ЛАНДШАФТНОЙ ОРИЕНТАЦИИ
+============================================ */
+@media (max-height: 600px) and (orientation: landscape) {
+  .block-4,
+  .block-5 {
+    padding: 30px 20px;
+  }
+
+  .block-4 .flex,
+  .block-5 .flex {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .block-4 .img-macbook img {
+    max-height: 300px;
+    width: auto;
+  }
+
+  .block-5 .image_mascot img {
+    max-height: 300px;
+    width: auto;
+  }
+
+  .block-4 .text-normal_black-left p,
+  .block-5 .text-normal_black-left p {
+    font-size: 1rem;
+  }
+}
